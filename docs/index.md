@@ -26,4 +26,5 @@
 1. struktura danych
      - Dane będą zapisywane w poszczególnych tabelach bazy danych o odpowiendich nazwach, każda poszczególna informacja taka jak np: nazwa użytkownika, będzie widniała w pojedynczym rekordzie w bazie
 1. szczegóły 
-     - Aplikacja w polu inputu po wpisaniu zadania które chcemy dodać do listy powinna wykasować informacje z inputa dla większego komfortu korzystania z aplikacji, aplikacja oczywiście powinna nie odświeżać na nowo okna przeglądarki za każdym razem jak dodamy zadanie do listy  
+     - Aplikacja w polu inputu po wpisaniu zadania które chcemy dodać do listy powinna wykasować informacje z inputa dla większego komfortu korzystania z aplikacji, aplikacja oczywiście powinna nie odświeżać na nowo okna przeglądarki za każdym razem jak dodamy zadanie do listy
+     - Aplikacja powinna być responsywna  
