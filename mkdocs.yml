@@ -1,6 +1,0 @@
-site_name: MkLorum
-nav:
-    - zalozenia: index.md
-    - projekt: projekt.md
-    - technologie: technologie.md
-theme: readthedocs

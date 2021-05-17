@@ -1,0 +1,9 @@
+site_name: plinek-et-to-do-app
+repo_url: https://github.com/praktyka-et/to-do-app
+docs_dir: ./src
+site_dir: ./site
+
+nav:
+  - zalozenia: index.md
+  - projekt: projekt.md
+  - technologie: technologie.md
