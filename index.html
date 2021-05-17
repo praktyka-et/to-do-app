@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="None">
+        
+        
+        <link rel="shortcut icon" href="img/favicon.ico">
+        <title>plinek-et-to-do-app</title>
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/font-awesome.min.css" rel="stylesheet">
+        <link href="css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+
+        <script src="js/jquery-1.10.2.min.js" defer></script>
+        <script src="js/bootstrap.min.js" defer></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script> 
+    </head>
+
+    <body class="homepage">
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href=".">plinek-et-to-do-app</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar-collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="navitem active">
+                                <a href="." class="nav-link">zalozenia</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="projekt/" class="nav-link">projekt</a>
+                            </li>
+                            <li class="navitem">
+                                <a href="technologie/" class="nav-link">technologie</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-toggle="modal" data-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" class="nav-link disabled">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="projekt/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/praktyka-et/to-do-app/edit/master/docs/index.md" class="nav-link"><i class="fa fa-github"></i> Edit on GitHub</a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-light navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-toggle="collapse" data-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-secondary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-level="1"><a href="#zalozenia-projektu-to-do-app" class="nav-link">Zalożenia projektu To-Do-App</a>
+              <ul class="nav flex-column">
+            <li class="nav-item" data-level="2"><a href="#spis-tresci" class="nav-link">Spis treści</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#wymagania-techniczne-aplikacji" class="nav-link">Wymagania techniczne aplikacji</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#struktura-aplikacji" class="nav-link">Struktura aplikacji</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#kolorystyka-aplikacji" class="nav-link">Kolorystyka aplikacji</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#zaozenia-funckjonalne" class="nav-link">Założenia funckjonalne</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            <li class="nav-item" data-level="2"><a href="#zaozenia-niefunkcjonalne" class="nav-link">Założenia niefunkcjonalne</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<h1 id="zalozenia-projektu-to-do-app">Zalożenia projektu To-Do-App</h1>
+<h2 id="spis-tresci">Spis treści</h2>
+<ol>
+<li>Wymagania techniczne aplikacji</li>
+<li>Struktura aplikacji</li>
+<li>Kolorystyka aplikacji</li>
+<li>Zalożenia funkcjonalne<ul>
+<li>dodawanie itemów do listy</li>
+<li>oznaczenia elementów</li>
+<li>usuwanie itemów z listy</li>
+<li>limity </li>
+</ul>
+</li>
+<li>Założenia niefunkcjonalne<ul>
+<li>Wyświetlanie itemów w formie listy</li>
+<li>struktura aplikacji</li>
+<li>przechowywanie danych</li>
+<li>struktura danych</li>
+<li>szczegóły </li>
+<li>Kolorystyka aplikacji</li>
+<li>wymogi</li>
+</ul>
+</li>
+</ol>
+<h2 id="wymagania-techniczne-aplikacji">Wymagania techniczne aplikacji</h2>
+<ol>
+<li>Aplikacja powinna działać tak samo dobrze na wszystkich dotępnych przeglądarkach internetowych</li>
+<li>Aplikacja powinna odczytywać dane z serwera przy każdym logowaniu się użytkownika</li>
+<li>Aplikacja będzie wykonana w technologii node.js, HTML5, niereracylnej bazy danych MongoDB oraz arkusza styli CSS3.</li>
+<li>Wykonawca dostarczy kod źródłowy apliakcji, który będzie umieszczony na repezytorium</li>
+</ol>
+<h2 id="struktura-aplikacji">Struktura aplikacji</h2>
+<ol>
+<li>Struktura informacji prezentowanych na stronie powinna być zoruzmiała i spójna dla użytkownika</li>
+<li>poszczególne sekcje aplikacji powinny być rozmieszczone intyuicyjnie i w sposób nieuttrudniający użytkownikowi korzystaia z niej</li>
+<li>Komunikaty o błędach powinny sugerować ich rozwiązanie.</li>
+<li>W odpowienich miejscach powinny znjadować się podpowiedzi lub podpisy danego elementu, tak aby nie utrudniało to korzystania z aplikacji użytkownikowi</li>
+<li>Nawigacja po aplikacji powinna być intyuicyjna i przejrzysta dla użytkownika</li>
+<li>Aplikacja powinna działać zarówno na urządzeniach mobilnych jak i komputerach, odpowiednio dopasowując się do rozdzielczości urządzenia z jakiego w danym momencie korzysta użytkownik</li>
+<li>aplikacja powinna posiadać panel logowania, z możliwością zarejestrowania się jako nowi użytkownicy, lub zalogowania się na założone już wcześniej konto</li>
+<li>Aplikacja będzie korzystać z fonta o nazwie "Lato"</li>
+</ol>
+<h2 id="kolorystyka-aplikacji">Kolorystyka aplikacji</h2>
+<ol>
+<li>Aplikacja powinna zapewniać wysoki kontrast między tekstem a tłem, by ułatwić użytkownikowi czytanie informacji</li>
+<li>aplikacja będzie wykonana w schemacie blurple - jest to idelanie połączenie czerni z kolorem niebieskim, co pozwoli na zbytnie nie przemęczanie oczu użytkowniku podczas korzystania z apliakcji</li>
+</ol>
+<h2 id="zaozenia-funckjonalne">Założenia funckjonalne</h2>
+<ol>
+<li>Dodawanie Itemów do listy<ul>
+<li>Dodawanie zadań do listy To-Do odbywać się będzie po kliknięciu przycisku podpisanego (dodaj zadanie), po dodaniu zadania powinien on być widoczny na  liście użytkownika. </li>
+<li>Wraz z dodaniem elementu użytkownik powinien mieć możliwość podania konkretnej daty do jakiej dane zadanie ma zostać wykonane, data będzie widniała po prawej stronie dodanego elementu</li>
+</ul>
+</li>
+<li>Oznaczenia elementów<ul>
+<li>Podczas dodawania itemu do listy użytkownik powinien mieć możliwość dodania zadania z "priorytetowym" oznaczeniem, zadanie będzie wtedy widniało pod kolorem czerownym  </li>
+</ul>
+</li>
+<li>Usuwanie itemów z listy<ul>
+<li>Po dodaniu przez użytkownika zadania, powinien pojawić się obok niego przycisk (podpisany usuń) umożliwiający jego usunięcie   </li>
+<li>Po dodaniu zadania przez użytkownika powinien pojawić się również button (podpisany "USUŃ WSZYSTKO") umożliwiający usunięcie całej listy</li>
+</ul>
+</li>
+<li>Limity<ul>
+<li>Aplikacja nie powinna ograniczać użytkownika poprzez ustaloną granicę maksymalnej ilości dodanych zadań. Jedyną blokadą jaką aplikacja powinna posiadać jest próba wpisania zadania o takiej samej treści jakie widnieje na liście, podczas takiej próby powinien pojawić się error informujący użytkownika o powodzie niepowodzenia dodania zadania.       </li>
+</ul>
+</li>
+</ol>
+<h2 id="zaozenia-niefunkcjonalne">Założenia niefunkcjonalne</h2>
+<ol>
+<li>Wyświetlanie Zadań w formie listy<ul>
+<li>Po wcześniejszym dodaniu zadania powinny się one wyświetlać się w formie imitującej liste      </li>
+</ul>
+</li>
+<li>przechowywanie danych
+     -Dane użytkownika po zalogowaniu powinny zapisywać się w bazie danych</li>
+<li>szczegóły <ul>
+<li>Aplikacja po wpisaniu i dodaniu przez użytkownika zadania do listy, w ramach estetyki powinna wyczyścić polę do jakiego użytkownik wcześniej dodał zadanie 
+ -Aplikacja będzie posiadać nagłówek o wielkości 50px, reszta tekstu powinna posiadać wielkość nie większą niż 20px. </li>
+</ul>
+</li>
+<li>Wymogi<ul>
+<li>Wymogiem korzystania z aplikacji będzie posiadanie przez użytkownika posiadanie zainstalowanej na urządzeniu przeglądarki internetowej</li>
+<li>Wymogiem korzystania z aplikacji będzie posiadanie przez użytkownika stabilnego łącza internetowego</li>
+</ul>
+</li>
+</ol></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script>
+            var base_url = ".",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="js/base.js" defer></script>
+        <script src="search/main.js" defer></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    From here you can search these documents. Enter
+                    your search terms below.
+                </p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>
+
+<!--
+MkDocs version : 1.1.2
+Build Date UTC : 2021-05-17 08:09:23.523453+00:00
+-->
